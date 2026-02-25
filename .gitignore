@@ -1,3 +1,4 @@
+# Python
 __pycache__/
 *.py[cod]
 *.egg-info/
@@ -6,7 +7,19 @@ __pycache__/
 venv/
 dist/
 build/
-*.DS_Store
 .ipynb_checkpoints/
 *.log
+
+# OS
+*.DS_Store
 node_modules/
+
+# Large binary audio files — too big for git; re-download via dataset_builder.py
+*.mp3
+*.wav
+*.flac
+data/raw_audio/*.mp3
+
+# Model checkpoints (re-generate by running main.py)
+# outputs/models/      ← uncomment if you prefer not to track them
+
